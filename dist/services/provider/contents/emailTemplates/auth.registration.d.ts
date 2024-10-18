@@ -1,0 +1,10 @@
+export declare function registrationCodeTemplate(full_name: string, code: string): string;
+export declare function withdrawalTemplate(full_name: string, amount: number): string;
+export declare function updatedDeliveryTemplate(full_name: string, delivery_status: string): string;
+export declare function updatedOrderTemplate(full_name: string, order_status: string): string;
+export declare function adminKycTemplate(full_name: string): string;
+export declare function KycStatusTemplate(full_name: string, kyc_status: any): string;
+export declare function vendorKycTemplate(full_name: string): string;
+export declare function OtpTemplate(full_name: string, code: string): string;
+export declare function OrderRecievedTemplate(full_name: string): string;
+export declare function AdminOrderRecievedTemplate(full_name: string): string;
