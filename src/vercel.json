@@ -3,7 +3,7 @@
     "builds": [
       {
         "src": "dist/**/*.js",
-        "use": "@vercel/node",
+        "use": "@vercel/serverless",
         "config": {
           "outputDirectory": "dist"
         }
