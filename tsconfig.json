@@ -20,6 +20,9 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "typeRoots": ["node_modules/@types"]
-  }
+    "typeRoots": ["node_modules/@types"],
+     "declarationDir": "./dist"
+  },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
 }

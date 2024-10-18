@@ -18,9 +18,11 @@ async function bootstrapServer(): Promise<Server> {
   return createServer(expressApp);
 }
 
-export const handler: Handler = async (event, context) => {
+function getHandler(): Handler {
   if (!cachedServer) {
     cachedServer = await bootstrapServer();
   }
-  return proxy(cachedServer, event, context, 'PROMISE').promise;
-};
+  return (event, context) => proxy(cachedServer, event, context, 'PROMISE').promise;
+}
+
+export default getHandler;
