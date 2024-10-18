@@ -102,9 +102,9 @@ let UtilService = class UtilService {
         return arr.every((v) => v !== null && v !== undefined);
     }
 };
-exports.UtilService = UtilService;
-exports.UtilService = UtilService = __decorate([
+UtilService = __decorate([
     (0, common_1.Injectable)(),
     __metadata("design:paramtypes", [config_1.ConfigService])
 ], UtilService);
+exports.UtilService = UtilService;
 //# sourceMappingURL=utils.service.js.map

@@ -13,7 +13,6 @@ exports.UserTokenType = void 0;
 const graphql_1 = require("@nestjs/graphql");
 let UserTokenType = class UserTokenType {
 };
-exports.UserTokenType = UserTokenType;
 __decorate([
     (0, graphql_1.Field)(() => String),
     __metadata("design:type", String)
@@ -22,7 +21,8 @@ __decorate([
     (0, graphql_1.Field)(() => String),
     __metadata("design:type", String)
 ], UserTokenType.prototype, "refresh_token", void 0);
-exports.UserTokenType = UserTokenType = __decorate([
+UserTokenType = __decorate([
     (0, graphql_1.ObjectType)()
 ], UserTokenType);
+exports.UserTokenType = UserTokenType;
 //# sourceMappingURL=user-token.type.js.map

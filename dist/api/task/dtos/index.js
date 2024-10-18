@@ -14,7 +14,6 @@ const graphql_1 = require("@nestjs/graphql");
 const class_validator_1 = require("class-validator");
 let TaskDto = class TaskDto {
 };
-exports.TaskDto = TaskDto;
 __decorate([
     (0, graphql_1.Field)(),
     (0, class_validator_1.IsString)(),
@@ -47,12 +46,12 @@ __decorate([
     (0, graphql_1.Field)(() => Boolean, { nullable: true }),
     __metadata("design:type", Boolean)
 ], TaskDto.prototype, "completed", void 0);
-exports.TaskDto = TaskDto = __decorate([
+TaskDto = __decorate([
     (0, graphql_1.InputType)()
 ], TaskDto);
+exports.TaskDto = TaskDto;
 let UpdateTaskDto = class UpdateTaskDto {
 };
-exports.UpdateTaskDto = UpdateTaskDto;
 __decorate([
     (0, graphql_1.Field)({ nullable: true }),
     __metadata("design:type", String)
@@ -73,7 +72,8 @@ __decorate([
     (0, graphql_1.Field)({ nullable: true }),
     __metadata("design:type", Boolean)
 ], UpdateTaskDto.prototype, "completed", void 0);
-exports.UpdateTaskDto = UpdateTaskDto = __decorate([
+UpdateTaskDto = __decorate([
     (0, graphql_1.InputType)()
 ], UpdateTaskDto);
+exports.UpdateTaskDto = UpdateTaskDto;
 //# sourceMappingURL=index.js.map

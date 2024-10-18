@@ -14,7 +14,6 @@ const graphql_1 = require("@nestjs/graphql");
 const schema_1 = require("../../user/schema");
 let TaskType = class TaskType {
 };
-exports.TaskType = TaskType;
 __decorate([
     (0, graphql_1.Field)(() => String),
     __metadata("design:type", String)
@@ -51,7 +50,8 @@ __decorate([
     (0, graphql_1.Field)(() => Date, { nullable: true }),
     __metadata("design:type", Date)
 ], TaskType.prototype, "updatedAt", void 0);
-exports.TaskType = TaskType = __decorate([
+TaskType = __decorate([
     (0, graphql_1.ObjectType)()
 ], TaskType);
+exports.TaskType = TaskType;
 //# sourceMappingURL=task.type.js.map

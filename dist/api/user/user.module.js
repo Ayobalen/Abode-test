@@ -19,8 +19,7 @@ const auth_provider_1 = require("../auth/auth.provider");
 const jwt_1 = require("@nestjs/jwt");
 let UserModule = class UserModule {
 };
-exports.UserModule = UserModule;
-exports.UserModule = UserModule = __decorate([
+UserModule = __decorate([
     (0, common_1.Module)({
         providers: [user_provider_1.UserProvider, services_1.UserService, helpers_1.UtilService, auth_provider_1.AuthProvider, jwt_1.JwtService, auth_resolver_1.UserAuthResolver],
         exports: [services_1.UserService],
@@ -36,4 +35,5 @@ exports.UserModule = UserModule = __decorate([
         ],
     })
 ], UserModule);
+exports.UserModule = UserModule;
 //# sourceMappingURL=user.module.js.map

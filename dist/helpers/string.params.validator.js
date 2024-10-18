@@ -42,8 +42,8 @@ let StringParamsPipe = class StringParamsPipe {
         return value;
     }
 };
-exports.StringParamsPipe = StringParamsPipe;
-exports.StringParamsPipe = StringParamsPipe = __decorate([
+StringParamsPipe = __decorate([
     (0, common_1.Injectable)()
 ], StringParamsPipe);
+exports.StringParamsPipe = StringParamsPipe;
 //# sourceMappingURL=string.params.validator.js.map

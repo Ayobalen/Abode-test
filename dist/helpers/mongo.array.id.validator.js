@@ -44,8 +44,8 @@ let MongoIDArrayPipe = class MongoIDArrayPipe {
         return value;
     }
 };
-exports.MongoIDArrayPipe = MongoIDArrayPipe;
-exports.MongoIDArrayPipe = MongoIDArrayPipe = __decorate([
+MongoIDArrayPipe = __decorate([
     (0, common_1.Injectable)()
 ], MongoIDArrayPipe);
+exports.MongoIDArrayPipe = MongoIDArrayPipe;
 //# sourceMappingURL=mongo.array.id.validator.js.map

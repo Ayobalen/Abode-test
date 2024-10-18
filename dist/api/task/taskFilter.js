@@ -13,7 +13,6 @@ exports.TaskFilterInput = void 0;
 const graphql_1 = require("@nestjs/graphql");
 let TaskFilterInput = class TaskFilterInput {
 };
-exports.TaskFilterInput = TaskFilterInput;
 __decorate([
     (0, graphql_1.Field)({ nullable: true }),
     __metadata("design:type", String)
@@ -34,7 +33,8 @@ __decorate([
     (0, graphql_1.Field)({ nullable: true }),
     __metadata("design:type", String)
 ], TaskFilterInput.prototype, "status", void 0);
-exports.TaskFilterInput = TaskFilterInput = __decorate([
+TaskFilterInput = __decorate([
     (0, graphql_1.InputType)()
 ], TaskFilterInput);
+exports.TaskFilterInput = TaskFilterInput;
 //# sourceMappingURL=taskFilter.js.map

@@ -22,8 +22,8 @@ let HttpExceptionFilter = class HttpExceptionFilter {
         response.status(status).json(errorResponse);
     }
 };
-exports.HttpExceptionFilter = HttpExceptionFilter;
-exports.HttpExceptionFilter = HttpExceptionFilter = __decorate([
+HttpExceptionFilter = __decorate([
     (0, common_1.Catch)(common_1.HttpException)
 ], HttpExceptionFilter);
+exports.HttpExceptionFilter = HttpExceptionFilter;
 //# sourceMappingURL=exception.filter.js.map

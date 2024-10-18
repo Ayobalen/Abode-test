@@ -14,7 +14,6 @@ const graphql_1 = require("@nestjs/graphql");
 const task_type_1 = require("./task.type");
 let PaginatedTasks = class PaginatedTasks {
 };
-exports.PaginatedTasks = PaginatedTasks;
 __decorate([
     (0, graphql_1.Field)(() => [task_type_1.TaskType]),
     __metadata("design:type", Array)
@@ -27,7 +26,8 @@ __decorate([
     (0, graphql_1.Field)(() => graphql_1.Int),
     __metadata("design:type", Number)
 ], PaginatedTasks.prototype, "totalPages", void 0);
-exports.PaginatedTasks = PaginatedTasks = __decorate([
+PaginatedTasks = __decorate([
     (0, graphql_1.ObjectType)()
 ], PaginatedTasks);
+exports.PaginatedTasks = PaginatedTasks;
 //# sourceMappingURL=paginatedRes.type.js.map

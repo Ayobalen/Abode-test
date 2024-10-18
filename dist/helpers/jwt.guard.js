@@ -27,8 +27,8 @@ let JwtGuard = class JwtGuard {
         return true;
     }
 };
-exports.JwtGuard = JwtGuard;
-exports.JwtGuard = JwtGuard = __decorate([
+JwtGuard = __decorate([
     (0, common_1.Injectable)()
 ], JwtGuard);
+exports.JwtGuard = JwtGuard;
 //# sourceMappingURL=jwt.guard.js.map

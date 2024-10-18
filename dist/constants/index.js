@@ -11,69 +11,69 @@ var ENV;
 (function (ENV) {
     ENV["MONGO_URI"] = "MONGO_URI";
     ENV["NODE_ENV"] = "NODE_ENV";
-})(ENV || (exports.ENV = ENV = {}));
+})(ENV = exports.ENV || (exports.ENV = {}));
 var USER_TYPES;
 (function (USER_TYPES) {
     USER_TYPES["USER"] = "user";
     USER_TYPES["ADMIN"] = "admin";
     USER_TYPES["VENDOR"] = "vendor";
-})(USER_TYPES || (exports.USER_TYPES = USER_TYPES = {}));
+})(USER_TYPES = exports.USER_TYPES || (exports.USER_TYPES = {}));
 var USER_STATUS;
 (function (USER_STATUS) {
     USER_STATUS["ACTIVE"] = "active";
     USER_STATUS["INACTIVE"] = "inactive";
-})(USER_STATUS || (exports.USER_STATUS = USER_STATUS = {}));
+})(USER_STATUS = exports.USER_STATUS || (exports.USER_STATUS = {}));
 var TRANSACTION_TYPE;
 (function (TRANSACTION_TYPE) {
     TRANSACTION_TYPE["DEPOSIT"] = "deposit";
     TRANSACTION_TYPE["WITHDRAWAL"] = "withdrawal";
     TRANSACTION_TYPE["TRANSFER"] = "transfer";
     TRANSACTION_TYPE["INITIAL"] = "initial";
-})(TRANSACTION_TYPE || (exports.TRANSACTION_TYPE = TRANSACTION_TYPE = {}));
+})(TRANSACTION_TYPE = exports.TRANSACTION_TYPE || (exports.TRANSACTION_TYPE = {}));
 var ID_VERIFICATION;
 (function (ID_VERIFICATION) {
     ID_VERIFICATION["NATIONAL_IDENTITY_CARD"] = "national_identity_card";
     ID_VERIFICATION["PASSPORT"] = "passport";
     ID_VERIFICATION["DRIVER_LICENSE"] = "driver_license";
-})(ID_VERIFICATION || (exports.ID_VERIFICATION = ID_VERIFICATION = {}));
+})(ID_VERIFICATION = exports.ID_VERIFICATION || (exports.ID_VERIFICATION = {}));
 var CATEGORY;
 (function (CATEGORY) {
     CATEGORY["MEN"] = "men";
     CATEGORY["WOMEN"] = "women";
     CATEGORY["NATIVE"] = "native";
     CATEGORY["ALTE"] = "alte";
-})(CATEGORY || (exports.CATEGORY = CATEGORY = {}));
+})(CATEGORY = exports.CATEGORY || (exports.CATEGORY = {}));
 var DELIVERY_OPTIONS;
 (function (DELIVERY_OPTIONS) {
     DELIVERY_OPTIONS["INTER_STATE_DELIVERY"] = "inter_state_delivery";
     DELIVERY_OPTIONS["INTRA_STATE_DELIVERY"] = "intra_state_delivery";
-})(DELIVERY_OPTIONS || (exports.DELIVERY_OPTIONS = DELIVERY_OPTIONS = {}));
+})(DELIVERY_OPTIONS = exports.DELIVERY_OPTIONS || (exports.DELIVERY_OPTIONS = {}));
 var ORDER_STATUS;
 (function (ORDER_STATUS) {
     ORDER_STATUS["DELIVERED"] = "delivered";
     ORDER_STATUS["PENDING"] = "pending";
     ORDER_STATUS["CANCELLED"] = "cancelled";
     ORDER_STATUS["ASSIGNED"] = "assigned";
-})(ORDER_STATUS || (exports.ORDER_STATUS = ORDER_STATUS = {}));
+})(ORDER_STATUS = exports.ORDER_STATUS || (exports.ORDER_STATUS = {}));
 var DELIVERY_COMPANY;
 (function (DELIVERY_COMPANY) {
     DELIVERY_COMPANY["DHL"] = "DHL";
     DELIVERY_COMPANY["COURIER"] = "COURIER";
     DELIVERY_COMPANY["GIG"] = "GIG";
-})(DELIVERY_COMPANY || (exports.DELIVERY_COMPANY = DELIVERY_COMPANY = {}));
+})(DELIVERY_COMPANY = exports.DELIVERY_COMPANY || (exports.DELIVERY_COMPANY = {}));
 var KYC_STATUS;
 (function (KYC_STATUS) {
     KYC_STATUS["SUCCESSFUL"] = "successful";
     KYC_STATUS["REJECTED"] = "rejected";
     KYC_STATUS["PENDING"] = "pending";
-})(KYC_STATUS || (exports.KYC_STATUS = KYC_STATUS = {}));
+})(KYC_STATUS = exports.KYC_STATUS || (exports.KYC_STATUS = {}));
 var NOTIFICATION_TYPE;
 (function (NOTIFICATION_TYPE) {
     NOTIFICATION_TYPE["ORDER"] = "order";
     NOTIFICATION_TYPE["WALLET"] = "wallet";
     NOTIFICATION_TYPE["KYC"] = "kyc";
     NOTIFICATION_TYPE["WITHDRAWAL"] = "withdrawal";
-})(NOTIFICATION_TYPE || (exports.NOTIFICATION_TYPE = NOTIFICATION_TYPE = {}));
+})(NOTIFICATION_TYPE = exports.NOTIFICATION_TYPE || (exports.NOTIFICATION_TYPE = {}));
 var OtpReason;
 (function (OtpReason) {
     OtpReason["SIGN_UP"] = "Successful signup";
@@ -84,24 +84,24 @@ var OtpReason;
     OtpReason["SIGNUP_VERIFICATION"] = "Signup verification";
     OtpReason["ORDER_VERIFICATION"] = "Verify Order";
     OtpReason["WIHDRAWAL_VERIFICATION"] = "Withdrawal verification";
-})(OtpReason || (exports.OtpReason = OtpReason = {}));
+})(OtpReason = exports.OtpReason || (exports.OtpReason = {}));
 var OtpType;
 (function (OtpType) {
     OtpType["SMS"] = "Sms";
     OtpType["EMAIL"] = "Email";
     OtpType["ALL_CHANNEL"] = "All Channel";
-})(OtpType || (exports.OtpType = OtpType = {}));
+})(OtpType = exports.OtpType || (exports.OtpType = {}));
 var NODE_ENV;
 (function (NODE_ENV) {
     NODE_ENV["DEV"] = "development";
     NODE_ENV["PROD"] = "production";
     NODE_ENV["STAGING"] = "staging";
-})(NODE_ENV || (exports.NODE_ENV = NODE_ENV = {}));
+})(NODE_ENV = exports.NODE_ENV || (exports.NODE_ENV = {}));
 var TRANSACTION_STATUS;
 (function (TRANSACTION_STATUS) {
     TRANSACTION_STATUS["SUCCESSFUL"] = "successful";
     TRANSACTION_STATUS["PENDING"] = "pending";
     TRANSACTION_STATUS["FAILED"] = "failed";
-})(TRANSACTION_STATUS || (exports.TRANSACTION_STATUS = TRANSACTION_STATUS = {}));
+})(TRANSACTION_STATUS = exports.TRANSACTION_STATUS || (exports.TRANSACTION_STATUS = {}));
 exports.DEFAULT_CATEGORY_URL = '';
 //# sourceMappingURL=index.js.map

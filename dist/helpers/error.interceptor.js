@@ -36,8 +36,8 @@ let ErrorInterceptor = class ErrorInterceptor {
         }));
     }
 };
-exports.ErrorInterceptor = ErrorInterceptor;
-exports.ErrorInterceptor = ErrorInterceptor = __decorate([
+ErrorInterceptor = __decorate([
     (0, common_1.Injectable)()
 ], ErrorInterceptor);
+exports.ErrorInterceptor = ErrorInterceptor;
 //# sourceMappingURL=error.interceptor.js.map

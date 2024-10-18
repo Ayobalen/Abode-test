@@ -13,7 +13,6 @@ exports.User = void 0;
 const graphql_1 = require("@nestjs/graphql");
 let User = class User {
 };
-exports.User = User;
 __decorate([
     (0, graphql_1.Field)(() => String),
     __metadata("design:type", String)
@@ -46,7 +45,8 @@ __decorate([
     (0, graphql_1.Field)(() => Boolean),
     __metadata("design:type", Boolean)
 ], User.prototype, "is_account_verified", void 0);
-exports.User = User = __decorate([
+User = __decorate([
     (0, graphql_1.ObjectType)()
 ], User);
+exports.User = User;
 //# sourceMappingURL=user.type.js.map

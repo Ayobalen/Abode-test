@@ -16,8 +16,8 @@ let LoggerService = class LoggerService {
         return this.logger.log;
     }
 };
-exports.LoggerService = LoggerService;
-exports.LoggerService = LoggerService = __decorate([
+LoggerService = __decorate([
     (0, common_1.Injectable)()
 ], LoggerService);
+exports.LoggerService = LoggerService;
 //# sourceMappingURL=log.service.js.map

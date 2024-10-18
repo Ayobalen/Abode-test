@@ -86,11 +86,11 @@ let OtpService = class OtpService {
         }
     }
 };
-exports.OtpService = OtpService;
-exports.OtpService = OtpService = __decorate([
+OtpService = __decorate([
     (0, common_1.Injectable)(),
     __param(1, (0, mongoose_1.InjectModel)(schema_1.Otp.name)),
     __metadata("design:paramtypes", [config_1.ConfigService,
         mongoose_2.Model])
 ], OtpService);
+exports.OtpService = OtpService;
 //# sourceMappingURL=otp.service.js.map

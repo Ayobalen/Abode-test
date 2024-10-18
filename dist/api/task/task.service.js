@@ -75,11 +75,11 @@ let TaskService = class TaskService {
             : null;
     }
 };
-exports.TaskService = TaskService;
-exports.TaskService = TaskService = __decorate([
+TaskService = __decorate([
     (0, common_1.Injectable)(),
     __param(0, (0, mongoose_1.InjectModel)(schema_1.Task.name)),
     __metadata("design:paramtypes", [mongoose_2.Model,
         utils_service_1.UtilService])
 ], TaskService);
+exports.TaskService = TaskService;
 //# sourceMappingURL=task.service.js.map

@@ -18,7 +18,6 @@ const constants_1 = require("../../constants");
 const helperfunctions_1 = require("../../utils/helperfunctions");
 let Otp = class Otp {
 };
-exports.Otp = Otp;
 __decorate([
     (0, mongoose_1.Prop)({
         required: true,
@@ -103,7 +102,7 @@ __decorate([
     }),
     __metadata("design:type", String)
 ], Otp.prototype, "unique_identifier", void 0);
-exports.Otp = Otp = __decorate([
+Otp = __decorate([
     (0, mongoose_1.Schema)({
         timestamps: true,
         toJSON: {
@@ -111,5 +110,6 @@ exports.Otp = Otp = __decorate([
         },
     })
 ], Otp);
+exports.Otp = Otp;
 exports.OtpSchema = mongoose_1.SchemaFactory.createForClass(Otp);
 //# sourceMappingURL=index.js.map

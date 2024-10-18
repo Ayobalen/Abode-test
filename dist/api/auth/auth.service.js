@@ -26,7 +26,6 @@ let AuthService = class AuthService {
     }
     async createAuth(userAuthData) {
         const userAuth = await this.userAuthModel.create(userAuthData);
-        await userAuth.populate('user');
         return userAuth;
     }
     async getUserByEmail(email) {
@@ -64,8 +63,7 @@ let AuthService = class AuthService {
         return userAuth;
     }
 };
-exports.AuthService = AuthService;
-exports.AuthService = AuthService = __decorate([
+AuthService = __decorate([
     (0, common_1.Injectable)(),
     __param(0, (0, mongoose_1.InjectModel)(schema_1.UserAuth.name)),
     __param(1, (0, mongoose_1.InjectModel)(schema_1.UserToken.name)),
@@ -73,4 +71,5 @@ exports.AuthService = AuthService = __decorate([
         mongoose_2.Model,
         jwt_1.JwtService])
 ], AuthService);
+exports.AuthService = AuthService;
 //# sourceMappingURL=auth.service.js.map

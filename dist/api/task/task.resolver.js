@@ -55,7 +55,6 @@ let TaskResolver = class TaskResolver {
         return 'Hello, GraphQL!';
     }
 };
-exports.TaskResolver = TaskResolver;
 __decorate([
     (0, graphql_1.Mutation)(() => task_type_1.TaskType),
     (0, common_1.UseGuards)(helpers_1.JwtGuard),
@@ -105,8 +104,9 @@ __decorate([
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", String)
 ], TaskResolver.prototype, "hello", null);
-exports.TaskResolver = TaskResolver = __decorate([
+TaskResolver = __decorate([
     (0, graphql_1.Resolver)(() => task_type_1.TaskType),
     __metadata("design:paramtypes", [task_service_1.TaskService])
 ], TaskResolver);
+exports.TaskResolver = TaskResolver;
 //# sourceMappingURL=task.resolver.js.map

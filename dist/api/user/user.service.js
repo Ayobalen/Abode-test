@@ -56,11 +56,11 @@ let UserService = class UserService {
         return user;
     }
 };
-exports.UserService = UserService;
-exports.UserService = UserService = __decorate([
+UserService = __decorate([
     (0, common_1.Injectable)(),
     __param(0, (0, mongoose_1.InjectModel)(schema_1.User.name)),
     __metadata("design:paramtypes", [mongoose_2.Model,
         utils_service_1.UtilService])
 ], UserService);
+exports.UserService = UserService;
 //# sourceMappingURL=user.service.js.map

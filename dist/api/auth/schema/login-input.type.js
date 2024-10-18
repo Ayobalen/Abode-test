@@ -13,7 +13,6 @@ exports.LoginPayloadInput = void 0;
 const graphql_1 = require("@nestjs/graphql");
 let LoginPayloadInput = class LoginPayloadInput {
 };
-exports.LoginPayloadInput = LoginPayloadInput;
 __decorate([
     (0, graphql_1.Field)(),
     __metadata("design:type", String)
@@ -22,7 +21,8 @@ __decorate([
     (0, graphql_1.Field)(),
     __metadata("design:type", String)
 ], LoginPayloadInput.prototype, "password", void 0);
-exports.LoginPayloadInput = LoginPayloadInput = __decorate([
+LoginPayloadInput = __decorate([
     (0, graphql_1.InputType)()
 ], LoginPayloadInput);
+exports.LoginPayloadInput = LoginPayloadInput;
 //# sourceMappingURL=login-input.type.js.map

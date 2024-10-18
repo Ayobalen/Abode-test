@@ -15,7 +15,6 @@ const mongoose_2 = require("mongoose");
 const user_schema_1 = require("../../user/schema/user.schema");
 let UserToken = class UserToken {
 };
-exports.UserToken = UserToken;
 __decorate([
     (0, mongoose_1.Prop)({
         required: true,
@@ -33,7 +32,7 @@ __decorate([
     (0, mongoose_1.Prop)(),
     __metadata("design:type", String)
 ], UserToken.prototype, "refresh_token", void 0);
-exports.UserToken = UserToken = __decorate([
+UserToken = __decorate([
     (0, mongoose_1.Schema)({
         timestamps: true,
         toJSON: {
@@ -41,5 +40,6 @@ exports.UserToken = UserToken = __decorate([
         },
     })
 ], UserToken);
+exports.UserToken = UserToken;
 exports.UserTokenSchema = mongoose_1.SchemaFactory.createForClass(UserToken);
 //# sourceMappingURL=user-token.schema.js.map

@@ -13,12 +13,12 @@ exports.DeleteTaskInput = void 0;
 const graphql_1 = require("@nestjs/graphql");
 let DeleteTaskInput = class DeleteTaskInput {
 };
-exports.DeleteTaskInput = DeleteTaskInput;
 __decorate([
     (0, graphql_1.Field)(),
     __metadata("design:type", String)
 ], DeleteTaskInput.prototype, "_id", void 0);
-exports.DeleteTaskInput = DeleteTaskInput = __decorate([
+DeleteTaskInput = __decorate([
     (0, graphql_1.InputType)()
 ], DeleteTaskInput);
+exports.DeleteTaskInput = DeleteTaskInput;
 //# sourceMappingURL=deleteTask.type.js.map

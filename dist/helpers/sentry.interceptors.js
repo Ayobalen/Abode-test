@@ -76,8 +76,8 @@ let SentryInterceptor = class SentryInterceptor {
         }));
     }
 };
-exports.SentryInterceptor = SentryInterceptor;
-exports.SentryInterceptor = SentryInterceptor = __decorate([
+SentryInterceptor = __decorate([
     (0, common_1.Injectable)()
 ], SentryInterceptor);
+exports.SentryInterceptor = SentryInterceptor;
 //# sourceMappingURL=sentry.interceptors.js.map

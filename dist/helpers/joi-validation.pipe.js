@@ -34,11 +34,11 @@ let JoiValidationPipe = class JoiValidationPipe {
         return value;
     }
 };
-exports.JoiValidationPipe = JoiValidationPipe;
-exports.JoiValidationPipe = JoiValidationPipe = __decorate([
+JoiValidationPipe = __decorate([
     (0, common_1.Injectable)(),
     __metadata("design:paramtypes", [Object])
 ], JoiValidationPipe);
+exports.JoiValidationPipe = JoiValidationPipe;
 const injectJoiSchema = (schema) => new JoiValidationPipe(schema);
 exports.injectJoiSchema = injectJoiSchema;
 //# sourceMappingURL=joi-validation.pipe.js.map

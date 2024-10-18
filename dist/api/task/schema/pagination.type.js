@@ -13,7 +13,6 @@ exports.PaginationQuery = void 0;
 const graphql_1 = require("@nestjs/graphql");
 let PaginationQuery = class PaginationQuery {
 };
-exports.PaginationQuery = PaginationQuery;
 __decorate([
     (0, graphql_1.Field)(() => graphql_1.Int, { nullable: true }),
     __metadata("design:type", Number)
@@ -22,7 +21,8 @@ __decorate([
     (0, graphql_1.Field)(() => graphql_1.Int, { nullable: true }),
     __metadata("design:type", Number)
 ], PaginationQuery.prototype, "offset", void 0);
-exports.PaginationQuery = PaginationQuery = __decorate([
+PaginationQuery = __decorate([
     (0, graphql_1.InputType)()
 ], PaginationQuery);
+exports.PaginationQuery = PaginationQuery;
 //# sourceMappingURL=pagination.type.js.map

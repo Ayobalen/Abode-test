@@ -27,8 +27,8 @@ let Helpers = class Helpers {
             .join('');
     }
 };
-exports.Helpers = Helpers;
-exports.Helpers = Helpers = __decorate([
+Helpers = __decorate([
     (0, common_1.Injectable)()
 ], Helpers);
+exports.Helpers = Helpers;
 //# sourceMappingURL=general.helpers.js.map

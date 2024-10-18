@@ -13,7 +13,6 @@ exports.FilterTaskDto = void 0;
 const graphql_1 = require("@nestjs/graphql");
 let FilterTaskDto = class FilterTaskDto {
 };
-exports.FilterTaskDto = FilterTaskDto;
 __decorate([
     (0, graphql_1.Field)({ nullable: true }),
     __metadata("design:type", String)
@@ -34,7 +33,8 @@ __decorate([
     (0, graphql_1.Field)({ nullable: true }),
     __metadata("design:type", Date)
 ], FilterTaskDto.prototype, "createdAt", void 0);
-exports.FilterTaskDto = FilterTaskDto = __decorate([
+FilterTaskDto = __decorate([
     (0, graphql_1.InputType)()
 ], FilterTaskDto);
+exports.FilterTaskDto = FilterTaskDto;
 //# sourceMappingURL=filter.type.js.map

@@ -70,9 +70,9 @@ let Paystack = class Paystack {
         }
     }
 };
-exports.Paystack = Paystack;
-exports.Paystack = Paystack = __decorate([
+Paystack = __decorate([
     (0, common_1.Injectable)(),
     __metadata("design:paramtypes", [config_1.ConfigService])
 ], Paystack);
+exports.Paystack = Paystack;
 //# sourceMappingURL=paystack.js.map

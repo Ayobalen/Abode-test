@@ -13,12 +13,12 @@ exports.LoginError = void 0;
 const graphql_1 = require("@nestjs/graphql");
 let LoginError = class LoginError {
 };
-exports.LoginError = LoginError;
 __decorate([
     (0, graphql_1.Field)(() => String),
     __metadata("design:type", String)
 ], LoginError.prototype, "message", void 0);
-exports.LoginError = LoginError = __decorate([
+LoginError = __decorate([
     (0, graphql_1.ObjectType)()
 ], LoginError);
+exports.LoginError = LoginError;
 //# sourceMappingURL=login-error.type.js.map

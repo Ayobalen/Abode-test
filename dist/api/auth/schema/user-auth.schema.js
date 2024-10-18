@@ -15,7 +15,6 @@ const mongoose_2 = require("mongoose");
 const schema_1 = require("../../user/schema");
 let UserAuth = class UserAuth {
 };
-exports.UserAuth = UserAuth;
 __decorate([
     (0, mongoose_1.Prop)({
         ref: schema_1.User.name,
@@ -47,7 +46,7 @@ __decorate([
     (0, mongoose_1.Prop)({ default: false }),
     __metadata("design:type", Boolean)
 ], UserAuth.prototype, "deleted", void 0);
-exports.UserAuth = UserAuth = __decorate([
+UserAuth = __decorate([
     (0, mongoose_1.Schema)({
         timestamps: true,
         toJSON: {
@@ -55,5 +54,6 @@ exports.UserAuth = UserAuth = __decorate([
         },
     })
 ], UserAuth);
+exports.UserAuth = UserAuth;
 exports.UserAuthSchema = mongoose_1.SchemaFactory.createForClass(UserAuth);
 //# sourceMappingURL=user-auth.schema.js.map

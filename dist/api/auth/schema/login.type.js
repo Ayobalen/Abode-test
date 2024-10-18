@@ -18,7 +18,6 @@ const login_error_type_1 = require("./login-error.type");
 const login_output_type_1 = require("./login-output.type");
 let LoginResponseType = class LoginResponseType {
 };
-exports.LoginResponseType = LoginResponseType;
 __decorate([
     (0, graphql_1.Field)(() => String),
     __metadata("design:type", String)
@@ -47,7 +46,8 @@ __decorate([
     (0, graphql_1.Field)(() => login_data_type_1.LoginDataType, { nullable: true }),
     __metadata("design:type", login_data_type_1.LoginDataType)
 ], LoginResponseType.prototype, "data", void 0);
-exports.LoginResponseType = LoginResponseType = __decorate([
+LoginResponseType = __decorate([
     (0, graphql_1.ObjectType)()
 ], LoginResponseType);
+exports.LoginResponseType = LoginResponseType;
 //# sourceMappingURL=login.type.js.map

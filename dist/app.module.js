@@ -20,8 +20,7 @@ const path_1 = require("path");
 const task_module_1 = require("./api/task/task.module");
 let AppModule = class AppModule {
 };
-exports.AppModule = AppModule;
-exports.AppModule = AppModule = __decorate([
+AppModule = __decorate([
     (0, common_1.Module)({
         imports: [
             auth_module_1.AuthModule,
@@ -52,4 +51,5 @@ exports.AppModule = AppModule = __decorate([
         ],
     })
 ], AppModule);
+exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

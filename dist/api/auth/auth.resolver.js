@@ -132,7 +132,6 @@ let UserAuthResolver = class UserAuthResolver {
         return 'Hello, GraphQL!';
     }
 };
-exports.UserAuthResolver = UserAuthResolver;
 __decorate([
     (0, graphql_1.Mutation)(() => user_auth_type_1.UserAuthType),
     __param(0, (0, graphql_1.Args)('email')),
@@ -155,11 +154,12 @@ __decorate([
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", String)
 ], UserAuthResolver.prototype, "hello", null);
-exports.UserAuthResolver = UserAuthResolver = __decorate([
+UserAuthResolver = __decorate([
     (0, graphql_1.Resolver)(() => user_auth_type_1.UserAuthType),
     __metadata("design:paramtypes", [auth_service_1.AuthService,
         auth_provider_1.AuthProvider,
         services_1.UserService,
         helpers_1.UtilService])
 ], UserAuthResolver);
+exports.UserAuthResolver = UserAuthResolver;
 //# sourceMappingURL=auth.resolver.js.map

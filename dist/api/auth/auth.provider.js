@@ -74,12 +74,12 @@ let AuthProvider = class AuthProvider {
         };
     }
 };
-exports.AuthProvider = AuthProvider;
-exports.AuthProvider = AuthProvider = __decorate([
+AuthProvider = __decorate([
     (0, common_1.Injectable)(),
     __metadata("design:paramtypes", [user_service_1.UserService,
         helpers_1.UtilService,
         auth_service_1.AuthService,
         jwt_service_1.JwtService])
 ], AuthProvider);
+exports.AuthProvider = AuthProvider;
 //# sourceMappingURL=auth.provider.js.map

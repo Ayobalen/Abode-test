@@ -3,23 +3,25 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.handler = void 0;
 const core_1 = require("@nestjs/core");
-const helmet_1 = __importDefault(require("helmet"));
-const morgan = require("morgan");
-const nestjs_pino_1 = require("nestjs-pino");
 const app_module_1 = require("./app.module");
-const exception_filter_1 = require("./helpers/exception.filter");
-async function bootstrap() {
-    const app = await core_1.NestFactory.create(app_module_1.AppModule, {
-        bufferLogs: true,
-    });
-    app.useLogger(app.get(nestjs_pino_1.Logger));
-    app.setGlobalPrefix('api/v1');
-    app.useGlobalFilters(new exception_filter_1.HttpExceptionFilter());
-    app.use((0, helmet_1.default)());
+const platform_express_1 = require("@nestjs/platform-express");
+const express_1 = __importDefault(require("express"));
+const aws_serverless_express_1 = require("aws-serverless-express");
+let cachedServer;
+async function bootstrapServer() {
+    const expressApp = (0, express_1.default)();
+    const app = await core_1.NestFactory.create(app_module_1.AppModule, new platform_express_1.ExpressAdapter(expressApp));
     app.enableCors();
-    app.use(morgan('dev'));
-    await app.listen(process.env.PORT || '4000');
+    await app.init();
+    return (0, aws_serverless_express_1.createServer)(expressApp);
 }
-bootstrap();
+const handler = async (event, context) => {
+    if (!cachedServer) {
+        cachedServer = await bootstrapServer();
+    }
+    return (0, aws_serverless_express_1.proxy)(cachedServer, event, context, 'PROMISE').promise;
+};
+exports.handler = handler;
 //# sourceMappingURL=main.js.map

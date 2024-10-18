@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "src/main.ts",
+        "src": "dist/**/*.js",
         "use": "@vercel/node",
         "config": {
           "outputDirectory": "dist"
@@ -11,8 +11,8 @@
     ],
     "routes": [
       {
-        "src": "/api/(.*)",
-        "dest": "/dist/main.js" 
+        "src": "/(.*)",
+        "dest": "/index.html"
       }
     ]
   }

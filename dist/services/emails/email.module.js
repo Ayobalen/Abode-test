@@ -12,12 +12,12 @@ const mailer_1 = require("@nestjs-modules/mailer");
 const email_1 = require("./email");
 let MailModule = class MailModule {
 };
-exports.MailModule = MailModule;
-exports.MailModule = MailModule = __decorate([
+MailModule = __decorate([
     (0, common_1.Module)({
         imports: [mailer_1.MailerModule.forRoot({})],
         providers: [email_1.MailService],
         exports: [email_1.MailService],
     })
 ], MailModule);
+exports.MailModule = MailModule;
 //# sourceMappingURL=email.module.js.map

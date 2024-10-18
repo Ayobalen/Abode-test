@@ -20,11 +20,11 @@ let UserProvider = class UserProvider {
         this.utilService = utilService;
     }
 };
-exports.UserProvider = UserProvider;
-exports.UserProvider = UserProvider = __decorate([
+UserProvider = __decorate([
     (0, common_1.Injectable)(),
     __metadata("design:paramtypes", [services_1.UserService,
         services_1.AuthService,
         helpers_1.UtilService])
 ], UserProvider);
+exports.UserProvider = UserProvider;
 //# sourceMappingURL=user.provider.js.map

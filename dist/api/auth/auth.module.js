@@ -23,8 +23,7 @@ const schema_3 = require("../../common/schema");
 const auth_resolver_1 = require("./auth.resolver");
 let AuthModule = class AuthModule {
 };
-exports.AuthModule = AuthModule;
-exports.AuthModule = AuthModule = __decorate([
+AuthModule = __decorate([
     (0, common_1.Module)({
         imports: [
             (0, common_1.forwardRef)(() => user_module_1.UserModule),
@@ -49,9 +48,10 @@ exports.AuthModule = AuthModule = __decorate([
                 },
             ]),
         ],
-        providers: [auth_provider_1.AuthProvider, services_1.AuthService, helpers_1.UtilService, general_helpers_1.Helpers, auth_resolver_1.UserAuthResolver],
+        providers: [auth_provider_1.AuthProvider, services_1.AuthService, helpers_1.UtilService, general_helpers_1.Helpers, services_1.UserService, auth_resolver_1.UserAuthResolver],
         controllers: [],
         exports: [services_1.AuthService],
     })
 ], AuthModule);
+exports.AuthModule = AuthModule;
 //# sourceMappingURL=auth.module.js.map

@@ -15,11 +15,11 @@ const task_schema_1 = require("./schema/task.schema");
 const helpers_1 = require("../../helpers");
 let TaskModule = class TaskModule {
 };
-exports.TaskModule = TaskModule;
-exports.TaskModule = TaskModule = __decorate([
+TaskModule = __decorate([
     (0, common_1.Module)({
         imports: [mongoose_1.MongooseModule.forFeature([{ name: task_schema_1.Task.name, schema: task_schema_1.TaskSchema }])],
         providers: [task_service_1.TaskService, helpers_1.UtilService, task_resolver_1.TaskResolver],
     })
 ], TaskModule);
+exports.TaskModule = TaskModule;
 //# sourceMappingURL=task.module.js.map

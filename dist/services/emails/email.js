@@ -43,8 +43,8 @@ let MailService = class MailService {
         }
     }
 };
-exports.MailService = MailService;
-exports.MailService = MailService = __decorate([
+MailService = __decorate([
     (0, common_1.Injectable)()
 ], MailService);
+exports.MailService = MailService;
 //# sourceMappingURL=email.js.map

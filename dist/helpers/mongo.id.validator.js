@@ -42,8 +42,8 @@ let MongoIDPipe = class MongoIDPipe {
         return value;
     }
 };
-exports.MongoIDPipe = MongoIDPipe;
-exports.MongoIDPipe = MongoIDPipe = __decorate([
+MongoIDPipe = __decorate([
     (0, common_1.Injectable)()
 ], MongoIDPipe);
+exports.MongoIDPipe = MongoIDPipe;
 //# sourceMappingURL=mongo.id.validator.js.map

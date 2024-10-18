@@ -23,10 +23,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getHash = void 0;
-exports.randomStringGen = randomStringGen;
-exports.getServerLocalTime = getServerLocalTime;
-exports.randomNumberGen = randomNumberGen;
+exports.getHash = exports.randomNumberGen = exports.getServerLocalTime = exports.randomStringGen = void 0;
 const crypto = __importStar(require("crypto"));
 function randomStringGen(length) {
     let text = '';
@@ -36,9 +33,11 @@ function randomStringGen(length) {
     }
     return text;
 }
+exports.randomStringGen = randomStringGen;
 function getServerLocalTime() {
     return new Date(Date.now() + 60 * 60 * 1000);
 }
+exports.getServerLocalTime = getServerLocalTime;
 function randomNumberGen(length = 4) {
     const numbers = '0123456789';
     return Array(length)
@@ -46,6 +45,7 @@ function randomNumberGen(length = 4) {
         .map((x) => x[Math.floor(Math.random() * x.length)])
         .join('');
 }
+exports.randomNumberGen = randomNumberGen;
 const getHash = (value = '') => {
     if (typeof value === 'object') {
         value = JSON.stringify(value);

@@ -15,7 +15,6 @@ const login_output_type_1 = require("./login-output.type");
 const user_auth_type_1 = require("./user-auth.type");
 let LoginDataType = class LoginDataType {
 };
-exports.LoginDataType = LoginDataType;
 __decorate([
     (0, graphql_1.Field)(() => user_auth_type_1.UserAuthType),
     __metadata("design:type", user_auth_type_1.UserAuthType)
@@ -28,7 +27,8 @@ __decorate([
     (0, graphql_1.Field)(() => String),
     __metadata("design:type", String)
 ], LoginDataType.prototype, "token", void 0);
-exports.LoginDataType = LoginDataType = __decorate([
+LoginDataType = __decorate([
     (0, graphql_1.ObjectType)()
 ], LoginDataType);
+exports.LoginDataType = LoginDataType;
 //# sourceMappingURL=login-data.type.js.map

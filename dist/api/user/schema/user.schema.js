@@ -14,7 +14,6 @@ const mongoose_1 = require("@nestjs/mongoose");
 const graphql_1 = require("@nestjs/graphql");
 let User = class User {
 };
-exports.User = User;
 __decorate([
     (0, graphql_1.Field)(),
     (0, mongoose_1.Prop)({
@@ -61,7 +60,7 @@ __decorate([
     (0, mongoose_1.Prop)({ type: String, default: null }),
     __metadata("design:type", String)
 ], User.prototype, "userAuthId", void 0);
-exports.User = User = __decorate([
+User = __decorate([
     (0, graphql_1.ObjectType)('UserType'),
     (0, mongoose_1.Schema)({
         timestamps: true,
@@ -70,5 +69,6 @@ exports.User = User = __decorate([
         },
     })
 ], User);
+exports.User = User;
 exports.UserSchema = mongoose_1.SchemaFactory.createForClass(User);
 //# sourceMappingURL=user.schema.js.map

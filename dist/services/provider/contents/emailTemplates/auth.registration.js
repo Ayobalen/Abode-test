@@ -1,15 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.registrationCodeTemplate = registrationCodeTemplate;
-exports.withdrawalTemplate = withdrawalTemplate;
-exports.updatedDeliveryTemplate = updatedDeliveryTemplate;
-exports.updatedOrderTemplate = updatedOrderTemplate;
-exports.adminKycTemplate = adminKycTemplate;
-exports.KycStatusTemplate = KycStatusTemplate;
-exports.vendorKycTemplate = vendorKycTemplate;
-exports.OtpTemplate = OtpTemplate;
-exports.OrderRecievedTemplate = OrderRecievedTemplate;
-exports.AdminOrderRecievedTemplate = AdminOrderRecievedTemplate;
+exports.AdminOrderRecievedTemplate = exports.OrderRecievedTemplate = exports.OtpTemplate = exports.vendorKycTemplate = exports.KycStatusTemplate = exports.adminKycTemplate = exports.updatedOrderTemplate = exports.updatedDeliveryTemplate = exports.withdrawalTemplate = exports.registrationCodeTemplate = void 0;
 function registrationCodeTemplate(full_name, code) {
     return `<!DOCTYPE html> <html lang="en">
     <head>
@@ -155,6 +146,7 @@ function registrationCodeTemplate(full_name, code) {
     </body>
   </html>`;
 }
+exports.registrationCodeTemplate = registrationCodeTemplate;
 function withdrawalTemplate(full_name, amount) {
     return `<!DOCTYPE html> <html lang="en">
     <head>
@@ -299,6 +291,7 @@ function withdrawalTemplate(full_name, amount) {
     </body>
   </html>`;
 }
+exports.withdrawalTemplate = withdrawalTemplate;
 function updatedDeliveryTemplate(full_name, delivery_status) {
     return `<!DOCTYPE html> <html lang="en">
     <head>
@@ -443,6 +436,7 @@ function updatedDeliveryTemplate(full_name, delivery_status) {
     </body>
   </html>`;
 }
+exports.updatedDeliveryTemplate = updatedDeliveryTemplate;
 function updatedOrderTemplate(full_name, order_status) {
     return `<!DOCTYPE html> <html lang="en">
     <head>
@@ -587,6 +581,7 @@ function updatedOrderTemplate(full_name, order_status) {
     </body>
   </html>`;
 }
+exports.updatedOrderTemplate = updatedOrderTemplate;
 function adminKycTemplate(full_name) {
     return `<!DOCTYPE html> <html lang="en">
     <head>
@@ -729,6 +724,7 @@ function adminKycTemplate(full_name) {
     </body>
   </html>`;
 }
+exports.adminKycTemplate = adminKycTemplate;
 function KycStatusTemplate(full_name, kyc_status) {
     return `<!DOCTYPE html> <html lang="en">
     <head>
@@ -871,6 +867,7 @@ function KycStatusTemplate(full_name, kyc_status) {
     </body>
   </html>`;
 }
+exports.KycStatusTemplate = KycStatusTemplate;
 function vendorKycTemplate(full_name) {
     return `<!DOCTYPE html> <html lang="en">
     <head>
@@ -1013,6 +1010,7 @@ function vendorKycTemplate(full_name) {
     </body>
   </html>`;
 }
+exports.vendorKycTemplate = vendorKycTemplate;
 function OtpTemplate(full_name, code) {
     return `<!DOCTYPE html> <html lang="en">
     <head>
@@ -1155,6 +1153,7 @@ function OtpTemplate(full_name, code) {
     </body>
   </html>`;
 }
+exports.OtpTemplate = OtpTemplate;
 function OrderRecievedTemplate(full_name) {
     return `<!DOCTYPE html> <html lang="en">
     <head>
@@ -1297,6 +1296,7 @@ function OrderRecievedTemplate(full_name) {
     </body>
   </html>`;
 }
+exports.OrderRecievedTemplate = OrderRecievedTemplate;
 function AdminOrderRecievedTemplate(full_name) {
     return `<!DOCTYPE html> <html lang="en">
     <head>
@@ -1439,4 +1439,5 @@ function AdminOrderRecievedTemplate(full_name) {
     </body>
   </html>`;
 }
+exports.AdminOrderRecievedTemplate = AdminOrderRecievedTemplate;
 //# sourceMappingURL=auth.registration.js.map
