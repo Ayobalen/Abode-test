@@ -1,23 +1,26 @@
-/* eslint-disable prettier/prettier */
 import { NestFactory } from '@nestjs/core';
-import helmet from 'helmet';
-import morgan = require('morgan');
-import { Logger } from 'nestjs-pino';
 import { AppModule } from './app.module';
-import { HttpExceptionFilter } from './helpers/exception.filter';
+import { Handler } from 'aws-lambda';
+import { Server } from 'http';
+import { ExpressAdapter } from '@nestjs/platform-express';
+import express from 'express';
+import { createServer, proxy } from 'aws-serverless-express';
 
-async function bootstrap() {
-  const app = await NestFactory.create(AppModule, {
-    bufferLogs: true,
-  });
+let cachedServer: Server;
 
-  app.useLogger(app.get(Logger));
-  app.setGlobalPrefix('api/v1');
-  app.useGlobalFilters(new HttpExceptionFilter());
-  app.use(helmet());
+async function bootstrapServer(): Promise<Server> {
+  const expressApp = express();
+  const app = await NestFactory.create(AppModule, new ExpressAdapter(expressApp));
+
   app.enableCors();
-  app.use(morgan('dev'));
-  await app.listen(process.env.PORT || '4000');
 
+  await app.init();
+  return createServer(expressApp);
 }
-bootstrap();
+
+export const handler: Handler = async (event, context) => {
+  if (!cachedServer) {
+    cachedServer = await bootstrapServer();
+  }
+  return proxy(cachedServer, event, context, 'PROMISE').promise;
+};
