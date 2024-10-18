@@ -1,0 +1,142 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+input DeleteTaskInput {
+  _id: String!
+}
+
+input FilterTaskDto {
+  createdAt: DateTime
+  description: String
+  priority: String
+  status: String
+  title: String
+}
+
+type LoginDataType {
+  token: String!
+  user: User!
+  userAuth: UserAuthType!
+}
+
+type LoginError {
+  message: String!
+}
+
+input LoginPayloadInput {
+  email: String!
+  password: String!
+}
+
+type LoginResponseType {
+  data: LoginDataType
+  errors: [LoginError!]
+  message: String
+  status: String!
+  token: UserTokenType!
+  user: User
+  userAuth: UserAuthType!
+}
+
+type Mutation {
+  createTask(data: TaskDto!): TaskType!
+  createUser(email: String!, password: String!, phone_number: String!): UserAuthType!
+  deleteTask(filter: DeleteTaskInput!): TaskType
+  loginUser(input: LoginPayloadInput!): LoginResponseType!
+  updateTask(data: UpdateTaskDto!, id: String!): TaskType!
+}
+
+type PaginatedTasks {
+  count: Int!
+  data: [TaskType!]!
+  totalPages: Int!
+}
+
+input PaginationQuery {
+  limit: Int
+  offset: Int
+}
+
+type Query {
+  getAllTasks(filter: FilterTaskDto, pagination: PaginationQuery): PaginatedTasks!
+  getTask(filter: TaskFilterInput!): TaskType
+  hello: String!
+}
+
+input TaskDto {
+  assignedTo: String!
+  completed: Boolean
+  description: String!
+  priority: String!
+  status: String!
+  title: String!
+}
+
+input TaskFilterInput {
+  _id: String
+  assignedTo: String
+  priority: String
+  status: String
+  title: String
+}
+
+type TaskType {
+  _id: String!
+  assignedTo: UserType!
+  completed: Boolean!
+  createdAt: DateTime
+  description: String!
+  priority: String!
+  status: String!
+  title: String!
+  updatedAt: DateTime
+}
+
+input UpdateTaskDto {
+  completed: Boolean
+  description: String
+  priority: String
+  status: String
+  title: String
+}
+
+type User {
+  _id: String!
+  email: String!
+  phone_number: String
+}
+
+type UserAuthType {
+  _id: String!
+  accessToken: String!
+  confirm_password: String
+  deleted: Boolean!
+  email: String!
+  password: String!
+  phone_number: String
+  previousPasswords: [String!]
+  refreshToken: String!
+  userAuthId: String
+}
+
+type UserTokenType {
+  access_token: String!
+  refresh_token: String!
+}
+
+type UserType {
+  _id: String!
+  confirm_password: String
+  deleted: Boolean!
+  email: String!
+  password: String
+  phone_number: String
+  previousPasswords: [String!]!
+  userAuthId: String
+}
